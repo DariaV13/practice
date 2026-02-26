@@ -16,7 +16,7 @@ A template to create a monorepo SST v3 project. [Learn more](https://sst.dev/doc
 3. Rename the files in the project to the name of your app.
 
    ```bash
-   npx replace-in-file '/monorepo-template/g' 'MY_APP' '**/*.*' --verbose
+   npx replace-in-file '/practice/g' 'MY_APP' '**/*.*' --verbose
    ```
 
 4. Deploy!
@@ -39,7 +39,7 @@ This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/work
    ```ts
    export module Example {
      export function hello() {
-       return "Hello, world!";
+       return 'Hello, world!';
      }
    }
    ```
@@ -47,7 +47,7 @@ This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/work
    That you can use across other packages using.
 
    ```ts
-   import { Example } from "@aws-monorepo/core/example";
+   import { Example } from '@aws-monorepo/core/example';
 
    Example.hello();
    ```
@@ -64,7 +64,7 @@ This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/work
 
 3. `scripts/`
 
-    This is for any scripts that you can run on your SST app using the `sst shell` CLI and [`tsx`](https://www.npmjs.com/package/tsx). For example, you can run the example script using:
+   This is for any scripts that you can run on your SST app using the `sst shell` CLI and [`tsx`](https://www.npmjs.com/package/tsx). For example, you can run the example script using:
 
    ```bash
    npm run shell src/example.ts

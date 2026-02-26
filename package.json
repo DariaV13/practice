@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-template",
+  "name": "practice",
   "version": "0.0.0",
   "workspaces": [
     "packages/*"
@@ -10,6 +10,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "replace-in-file": "^8.4.0",
     "sst": "^3"
   }
 }
